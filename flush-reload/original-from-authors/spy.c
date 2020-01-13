@@ -108,7 +108,7 @@ int main(int c, char **v) {
       }
       if (timing && ind < NTIMING) {
           if ((ind > 0) || hit) {
-              for (i = 0; i < noffsets; i++) 
+              for (i = 0; i < noffsets; i++)
                   timings[ind * noffsets + i] = times[i];
               ind++;
           }
@@ -138,7 +138,7 @@ int main(int c, char **v) {
                       putchar('\n');
                       for (int j = 0; j < ind; j++) {
                           printf("%d", j);
-                          for (i = 0; i < noffsets; i++) 
+                          for (i = 0; i < noffsets; i++)
                               printf("\t%d", timings[j * noffsets + i]);
                           putchar('\n');
                       }
